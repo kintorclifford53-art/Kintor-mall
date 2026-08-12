@@ -522,3 +522,351 @@ function searchProducts() {
 </body>
 </html># Kintor-mall
 Affordable housing 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLIFF1 Shopping Mall</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f7f7f7;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 15px 5%;
+    }
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff1683;
+    }
+
+    .search {
+      width: 40%;
+      padding: 12px 18px;
+      border-radius: 25px;
+      border: none;
+      outline: none;
+    }
+
+    nav {
+      margin-top: 18px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 25px;
+      font-size: 14px;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 25px;
+    }
+
+    .categories {
+      width: 210px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .categories h3 {
+      color: #ff1683;
+      margin-bottom: 15px;
+    }
+
+    .categories p {
+      padding: 9px 0;
+      cursor: pointer;
+    }
+
+    .products-area {
+      flex: 1;
+    }
+
+    .products-area h2 {
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 18px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 10px;
+      padding: 12px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .product img {
+      width: 100%;
+      height: 210px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .discount {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: #ff1683;
+      color: white;
+      padding: 5px 8px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+
+    .product h3 {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 13px;
+    }
+
+    .price {
+      color: #ff1683;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ff1683;
+      background: white;
+      color: #ff1683;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ff1683;
+      color: white;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+        padding: 15px;
+      }
+
+      .categories {
+        width: 100%;
+      }
+
+      .search {
+        width: 45%;
+      }
+
+      nav a {
+        margin-right: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="top">
+    <div class="logo">CLIFF1 <span>SHOPPING MALL</span></div>
+
+    <input
+      class="search"
+      id="search"
+      type="text"
+      placeholder="Search products..."
+      onkeyup="searchProducts()"
+    >
+
+    <div>🛒 <span id="cart">0</span></div>
+  </div>
+
+  <nav>
+    <a href="#">HOME</a>
+    <a href="#">PHONES</a>
+    <a href="#">ELECTRONICS</a>
+    <a href="#">FASHION</a>
+    <a href="#">ACCESSORIES</a>
+    <a href="#">CONTACT</a>
+  </nav>
+</header>
+
+
+<div class="container">
+
+  <aside class="categories">
+    <h3>CATEGORIES</h3>
+    <p>📱 All Products</p>
+    <p>📱 iPhone</p>
+    <p>📱 Samsung</p>
+    <p>📱 Tecno</p>
+    <p>📱 Infinix</p>
+    <p>🎧 Electronics</p>
+    <p>👕 Clothes</p>
+    <p>👟 Shoes</p>
+    <p>👜 Bags</p>
+  </aside>
+
+
+  <main class="products-area">
+
+    <h2>FEATURED PRODUCTS</h2>
+
+    <div class="products" id="products">
+
+
+      <!-- PRODUCT 1 -->
+      <div class="product">
+        <span class="discount">30% OFF</span>
+
+        <img src="grok_1786564086537.jpg"
+             alt="iPhone">
+
+        <h3>iPhone 15 Pro Max</h3>
+
+        <div class="old-price">GH₵ 13,000</div>
+        <div class="price">GH₵ 9,100</div>
+
+        <button onclick="addCart()">
+          🛒 Add to Cart
+        </button>
+      </div>
+
+
+      <!-- PRODUCT 2 -->
+      <div class="product">
+        <span class="discount">30% OFF</span>
+
+        <img src="grok_1786564054712.jpg"
+             alt="Samsung Phone">
+
+        <h3>Samsung Galaxy</h3>
+
+        <div class="old-price">GH₵ 10,000</div>
+        <div class="price">GH₵ 7,000</div>
+
+        <button onclick="addCart()">
+          🛒 Add to Cart
+        </button>
+      </div>
+
+
+      <!-- PRODUCT 3 -->
+      <div class="product">
+        <span class="discount">30% OFF</span>
+
+        <img src="grok_1786564076580.jpg"
+             alt="Smartphone">
+
+        <h3>Tecno Smartphone</h3>
+
+        <div class="old-price">GH₵ 2,500</div>
+        <div class="price">GH₵ 1,750</div>
+
+        <button onclick="addCart()">
+          🛒 Add to Cart
+        </button>
+      </div>
+
+
+      <!-- PRODUCT 4 -->
+      <div class="product">
+        <span class="discount">30% OFF</span>
+
+        <img src="grok_1786564086537.jpg"
+             alt="Phone">
+
+        <h3>Infinix Hot 50 Pro</h3>
+
+        <div class="old-price">GH₵ 2,300</div>
+        <div class="price">GH₵ 1,610</div>
+
+        <button onclick="addCart()">
+          🛒 Add to Cart
+        </button>
+      </div>
+
+
+    </div>
+  </main>
+
+</div>
+
+
+<script>
+
+let cart = 0;
+
+function addCart() {
+  cart++;
+  document.getElementById("cart").textContent = cart;
+  alert("Product added to cart!");
+}
+
+
+function searchProducts() {
+
+  let search =
+    document.getElementById("search").value.toLowerCase();
+
+  let products =
+    document.querySelectorAll(".product");
+
+  products.forEach(function(product) {
+
+    let name =
+      product.querySelector("h3").textContent.toLowerCase();
+
+    if (name.includes(search)) {
+      product.style.display = "";
+    } else {
+      product.style.display = "none";
+    }
+
+  });
+}
+
+</script>
+
+</body>
+</html>
+<img src="YOUR-PICTURE.jpg" alt="Product">
+
+<h3>Product Name</h3>
+
+<div class="old-price">GH₵ 3,000</div>
+<div class="price">GH₵ 2,100</div>
