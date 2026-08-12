@@ -6,7 +6,66 @@
 
 <title>Cliff1 Shopping Mall</title>
 
-<style>
+<style><img 
+    src="images/iphone-11.jpg" 
+    alt="Apple iPhone 11"
+    loading="lazy"
+><img 
+    src="images/iphone-11.jpg" 
+    alt="Apple iPhone 11"
+    loading="lazy"
+><img 
+/* PRODUCT PICTURES */
+.product img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+    background: #f8f8f8;
+}
+
+.product {
+    overflow: hidden;
+}<div class="product">
+
+    <img 
+        src="images/iphone-11.jpg" 
+        alt="Apple iPhone 11"
+        loading="lazy"
+    >
+
+    <h3>iPhone 11</h3>
+
+    <p class="old-price">GHC 4,000</p>
+
+    <h2>GHC 2,800</h2>
+
+    <strong>30% OFF</strong>
+
+    <button>View</button>
+
+</div>
+
+@media (max-width: 600px) {
+    .product img {
+        height: 180px;
+    }
+}images/iphone-11.jpg
+images/iphone-11-pro.jpg
+images/iphone-11-pro-max.jpg
+images/iphone-12.jpg
+images/iphone-12-pro.jpg
+images/iphone-12-pro-max.jpg
+images/iphone-13.jpg
+images/iphone-13-pro.jpg
+images/iphone-13-pro-max.jpg
+images/iphone-14.jpg
+images/iphone-14-pro.jpg
+images/iphone-15.jpg
+images/iphone-15-pro.jpg
+images/iphone-15-pro-max.jpg
 * {
   box-sizing: border-box;
 }
