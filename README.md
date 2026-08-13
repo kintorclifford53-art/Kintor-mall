@@ -810,9 +810,69 @@ function displayProducts(list){
 
     card.innerHTML=`
 
-      <div class="product-image">
-        ${product.icon}
-      </div>
+      <section class="products" id="products">
+  <h2>📱 Phones & Gadgets</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="images/iphone15.jpg" alt="iPhone 15">
+      <h3>iPhone 15</h3>
+      <p>GH₵ 6,500</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/iphone13.jpg" alt="iPhone 13">
+      <h3>iPhone 13</h3>
+      <p>GH₵ 5,200</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/iphone12.jpg" alt="iPhone 12">
+      <h3>iPhone 12</h3>
+      <p>GH₵ 4,200</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/samsung-s26.jpg" alt="Samsung Galaxy S26">
+      <h3>Samsung Galaxy S26</h3>
+      <p>GH₵ 8,500</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/samsung-s25.jpg" alt="Samsung Galaxy S25">
+      <h3>Samsung Galaxy S25</h3>
+      <p>GH₵ 7,000</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tecno-spark40.jpg" alt="Tecno Spark 40">
+      <h3>Tecno Spark 40</h3>
+      <p>GH₵ 2,300</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tecno-camon50.jpg" alt="Tecno Camon 50">
+      <h3>Tecno Camon 50</h3>
+      <p>GH₵ 3,200</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/infinix-hot60.jpg" alt="Infinix Hot 60">
+      <h3>Infinix Hot 60</h3>
+      <p>GH₵ 2,100</p>
+      <button>Buy Now</button>
+    </div>
+
+  </div>
+</section>
 
       <div class="product-info">
 
